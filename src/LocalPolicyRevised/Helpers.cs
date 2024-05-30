@@ -101,7 +101,7 @@ namespace LocalPolicyRevised
                 {
                     using (var subKey = rootRegistryKey.OpenSubKey(registryKeyPath, true))
                     {
-                        if (subKey != null)
+                        if (subKey != null && subKey.GetValueNames().Contains(registryValueName, StringComparer.OrdinalIgnoreCase))
                             subKey.DeleteValue(registryValueName);
                     }
                 }

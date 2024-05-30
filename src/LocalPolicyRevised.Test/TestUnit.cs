@@ -42,8 +42,7 @@ namespace LocalPolicyRevised.Test
             // Act - Set the policy back to its original value
             ComputerGroupPolicyObject.SetPolicySetting(
                 section, registryKeyPath, registryValueName,
-                original,
-                thisGuid: thisGuid);
+                original, thisGuid: thisGuid);
 
             // Assert
             Assert.AreEqual(default, current);
