@@ -1,6 +1,6 @@
-# LocalPolicy
+# LocalPolicyRevised
 
-[![NuGet Version](https://img.shields.io/nuget/v/LocalPolicy)](https://www.nuget.org/packages/LocalPolicy/) ![Build Status](https://github.com/rkttu/LocalPolicy/actions/workflows/dotnet.yml/badge.svg) [![GitHub Sponsors](https://img.shields.io/github/sponsors/rkttu)](https://github.com/sponsors/rkttu/)
+[![NuGet Version](https://img.shields.io/nuget/v/LocalPolicyRevised)](https://www.nuget.org/packages/LocalPolicyRevised/) ![Build Status](https://github.com/rkttu/LocalPolicyRevised/actions/workflows/dotnet.yml/badge.svg) [![GitHub Sponsors](https://img.shields.io/github/sponsors/rkttu)](https://github.com/sponsors/rkttu/)
 
 With this library, you can view or edit computer policies, user policies, and manage GPOs associated with Active Directory on the local computer in Windows OS.
 
@@ -64,4 +64,4 @@ ComputerGroupPolicyObject.DeletePolicySetting(
 
 ## License
 
-See [LICENSE](./LICENSE) file for more information.
+This library follows MIT license. See [LICENSE](./LICENSE) file for more information.
