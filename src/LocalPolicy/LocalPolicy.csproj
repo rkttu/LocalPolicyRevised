@@ -1,0 +1,39 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<TargetFramework>netstandard2.0</TargetFramework>
+		<OutputType>Library</OutputType>
+		<AssemblyName>LocalPolicy</AssemblyName>
+	</PropertyGroup>
+
+	<PropertyGroup>
+		<RootNamespace>LocalPolicy</RootNamespace>
+		<Title>LocalPolicy</Title>
+		<Version>0.5.0</Version>
+		<Authors>Martin Eden, LShift Ltd.; Jung Hyun, Nam</Authors>
+		<Company>LShift Ltd.; rkttu.com</Company>
+		<Product>LocalPolicy</Product>
+		<Description>With this library, you can view or edit computer policies, user policies, and manage GPOs associated with Active Directory on the local computer in Windows OS.</Description>
+		<Copyright>Copyright (c) 2013 Martin Eden, LShift Ltd.; (c) 2024 Jung Hyun, Nam, All rights reserved.</Copyright>
+		<PackageProjectUrl>https://github.com/rkttu/LocalPolicy</PackageProjectUrl>
+		<RepositoryUrl>https://github.com/rkttu/LocalPolicy</RepositoryUrl>
+		<RepositoryType>git</RepositoryType>
+		<PackageTags>admx;adml</PackageTags>
+		<PackageReleaseNotes>https://github.com/rkttu/LocalPolicy/releases</PackageReleaseNotes>
+		<IncludeSymbols>True</IncludeSymbols>
+		<SymbolPackageFormat>symbols.nupkg</SymbolPackageFormat>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+		<GenerateDocumentationFile>True</GenerateDocumentationFile>
+		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<None Include="..\..\README.md">
+			<Pack>True</Pack>
+			<PackagePath>\</PackagePath>
+		</None>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <PackageReference Include="Microsoft.Win32.Registry" Version="5.0.0" />
+	</ItemGroup>
+</Project>
