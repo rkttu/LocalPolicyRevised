@@ -106,6 +106,15 @@ namespace LocalPolicyRevised.Resources {
         }
         
         /// <summary>
+        ///   Unexpected error occurred while getting policy.과(와) 유사한 지역화된 문자열을 찾습니다.
+        /// </summary>
+        internal static string GetPolicySettingFailed {
+            get {
+                return ResourceManager.GetString("GetPolicySettingFailed", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Unable to retrieve path to section &apos;{0}&apos;.과(와) 유사한 지역화된 문자열을 찾습니다.
         /// </summary>
         internal static string GetRegistryKeyPathToFailed {
@@ -219,6 +228,15 @@ namespace LocalPolicyRevised.Resources {
         internal static string SetOptionsFailed {
             get {
                 return ResourceManager.GetString("SetOptionsFailed", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Unexpected error occurred while setting policy.과(와) 유사한 지역화된 문자열을 찾습니다.
+        /// </summary>
+        internal static string SetPolicySettingFailed {
+            get {
+                return ResourceManager.GetString("SetPolicySettingFailed", resourceCulture);
             }
         }
     }

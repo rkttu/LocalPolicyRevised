@@ -132,6 +132,9 @@
   <data name="GetPathFailed" xml:space="preserve">
     <value>Unable to retrieve path.</value>
   </data>
+  <data name="GetPolicySettingFailed" xml:space="preserve">
+    <value>Unexpected error occurred while getting policy.</value>
+  </data>
   <data name="GetRegistryKeyPathToFailed" xml:space="preserve">
     <value>Unable to retrieve path to section '{0}'.</value>
   </data>
@@ -170,5 +173,8 @@
   </data>
   <data name="SetOptionsFailed" xml:space="preserve">
     <value>Unable to set options.</value>
+  </data>
+  <data name="SetPolicySettingFailed" xml:space="preserve">
+    <value>Unexpected error occurred while setting policy.</value>
   </data>
 </root>

@@ -45,7 +45,7 @@ namespace LocalPolicyRevised
             staThread.Join();
 
             if (exception != null)
-                throw exception;
+                throw new GroupPolicyException(MessageResources.GetPolicySettingFailed, exception);
 
             return result;
         }
@@ -107,7 +107,7 @@ namespace LocalPolicyRevised
             staThread.Join();
 
             if (exception != null)
-                throw exception;
+                throw new GroupPolicyException(MessageResources.SetPolicySettingFailed, exception);
         }
 
         /// <summary>
@@ -126,22 +126,7 @@ namespace LocalPolicyRevised
         /// The unique identifier of this application. Set to <see langword="null"/> to use the executing assemblies GUID.
         /// </param>
         public static void DeletePolicySetting(GroupPolicySection section, string registryKeyPath, string registryValueName, Guid? thisGuid = default)
-        {
-            Exception exception = null;
-
-            var staThread = new Thread(() =>
-            {
-                try { Helpers.SetPolicySettingInternal(section, registryKeyPath, registryValueName, default, default, thisGuid); }
-                catch (Exception ex) { exception = ex; }
-            });
-
-            staThread.SetApartmentState(ApartmentState.STA);
-            staThread.Start();
-            staThread.Join();
-
-            if (exception != null)
-                throw exception;
-        }
+            => SetPolicySetting(section, registryKeyPath, registryValueName, default, default, thisGuid);
 
         /// <summary>
         /// Initializes a new instance of the <see cref="ComputerGroupPolicyObject"/> class.
