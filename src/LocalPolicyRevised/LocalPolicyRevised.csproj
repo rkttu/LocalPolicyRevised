@@ -8,7 +8,7 @@
 	<PropertyGroup>
 		<RootNamespace>LocalPolicyRevised</RootNamespace>
 		<Title>LocalPolicyRevised</Title>
-		<Version>0.5.0</Version>
+		<Version>0.5.1</Version>
 		<Authors>Martin Eden, LShift Ltd.; Jung Hyun, Nam</Authors>
 		<Company>LShift Ltd.; rkttu.com</Company>
 		<Product>LocalPolicyRevised</Product>

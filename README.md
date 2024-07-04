@@ -1,5 +1,9 @@
 # LocalPolicyRevised
 
+**Important notice: This library is no longer maintained.**
+
+**This library is provided solely for archiving and restoring code related to the Windows Policy Framework. If you're interested, take a look at the new libraries [AdmxParser](https://github.com/rkttu/AdmxParser/) and [AdmxPolicyManager](https://github.com/rkttu/AdmxPolicyManager/).**
+
 [![NuGet Version](https://img.shields.io/nuget/v/LocalPolicyRevised)](https://www.nuget.org/packages/LocalPolicyRevised/) ![Build Status](https://github.com/rkttu/LocalPolicyRevised/actions/workflows/dotnet.yml/badge.svg) [![GitHub Sponsors](https://img.shields.io/github/sponsors/rkttu)](https://github.com/sponsors/rkttu/)
 
 With this library, you can view or edit computer policies, user policies, and manage GPOs associated with Active Directory on the local computer in Windows OS.
